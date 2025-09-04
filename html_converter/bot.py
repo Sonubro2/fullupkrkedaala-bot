@@ -7,7 +7,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from config import CHANNEL_ID
 
-thumb_path = "thumb/html-5.png"
+thumb_path = "thumbs/html-5.png"
 
 def extract_names_and_urls(file_content):
     """Extract names and URLs from the text content."""
