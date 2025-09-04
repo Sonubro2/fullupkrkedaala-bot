@@ -3,8 +3,8 @@ from datetime import datetime
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import *
 from config import CHANNEL_ID2
-from Extractor.core import script
-from Extractor.core.mongo.plans_db import premium_users
+from core import script
+from core.mongo.plans_db import premium_users
 
 
 async def chk_user(query, user_id):
@@ -75,7 +75,7 @@ async def subscribe(app, message):
 
                 # 2. Send the invite message
                 sent = await message.reply_photo(
-                    photo="https://telegra.ph/file/b7a933f423c153f866699.jpg",
+                    photo="https://ar-hosting.pages.dev/1756558241760.jpg",
                     caption=script.FORCE_MSG.format(message.from_user.mention),
                     reply_markup=InlineKeyboardMarkup([[
                         InlineKeyboardButton("🤖 ɴᴇᴇᴅ ᴀᴘᴘʀᴏᴠᴀʟ ᴛᴏ ᴊᴏɪɴ 🤖", url=link)
@@ -102,7 +102,7 @@ async def subscribe(app, message):
                 await message.reply_text(
                     "❗ Please join our updates channel to use the bot.",
                     reply_markup=InlineKeyboardMarkup([[
-                        InlineKeyboardButton("🤖 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🤖", url="https://t.me/UGBotx")
+                        InlineKeyboardButton("🤖 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🤖", url="https://t.me/+4FibORwIG3BjMzI1")
                     ]])
                 )
             return 1
